@@ -1,8 +1,7 @@
-!/bin/sh
+#!/bin/sh
 #set -x
 # Taken from pbowden-msft/OutlookFontPoke https://github.com/pbowden-msft/OutlookFontPoke/blob/master/OutlookFontPoke
-# et now for TFL default fonts
-
+# Now set to TFL defaults New century schoolbook 11 profits
 TOOL_NAME="Microsoft Outlook 365/2019/2016 for Mac Default Font Changer"
 TOOL_VERSION="1.4"
 
@@ -144,8 +143,8 @@ if [ "$KEY_REPLYFONTCOMPLEX" != "0" ]; then
 fi
 
 # Set new font values - first one is for the Compose Font, the second is for the Reply/Forward font
-InsertValue "$KEY_MAILSETTINGS" "ComposeFontComplex" "3" "<html><head><style>/* Style Definitions */span.PersonalComposeStyle{mso-style-name:\"Personal Compose Style\";mso-style-type:personal-compose;mso-style-noshow:yes;mso-style-unhide:no;mso-ansi-font-size:$FONTSIZE;mso-bidi-font-size:11.0pt;font-family:\"$FONTNAME\";mso-ascii-font-family:\"$FONTNAME\";mso-hansi-font-family:\"$FONTNAME\";mso-bidi-font-family:\" Century Schoolbook LT\";mso-bidi-theme-font:minor-bidi;color:$FONTCOLOR;font-weight:normal;font-style:normal;text-decoration:none;text-underline:none;}--></style></head></html>"
-InsertValue "$KEY_MAILSETTINGS" "ReplyFontComplex" "3" "<html><head><style>/* Style Definitions */span.PersonalReplyStyle{mso-style-name:\"Personal Reply Style\";mso-style-type:personal-reply;mso-style-noshow:yes;mso-style-unhide:no;mso-ansi-font-size:$FONTSIZE;mso-bidi-font-size:11.0pt;font-family:\"$FONTNAME\";mso-ascii-font-family:\"$FONTNAME\";mso-hansi-font-family:\"$FONTNAME\";mso-bidi-font-family:\" Century Schoolbook LT\";mso-bidi-theme-font:minor-bidi;color:$FONTCOLOR;font-weight:normal;font-style:normal;text-decoration:none;text-underline:none;}--></style></head></html>"
+InsertValue "$KEY_MAILSETTINGS" "ComposeFontComplex" "3" "<html><head><style>/* Style Definitions */span.PersonalComposeStyle{mso-style-name:\"Personal Compose Style\";mso-style-type:personal-compose;mso-style-noshow:yes;mso-style-unhide:no;mso-ansi-font-size:$FONTSIZE;mso-bidi-font-size:11.0pt;font-family:\"$FONTNAME\";mso-ascii-font-family:\"$FONTNAME\";mso-hansi-font-family:\"$FONTNAME\";mso-bidi-font-family:\"New Century Schoolbook LT\";mso-bidi-theme-font:minor-bidi;color:$FONTCOLOR;font-weight:normal;font-style:normal;text-decoration:none;text-underline:none;}--></style></head></html>"
+InsertValue "$KEY_MAILSETTINGS" "ReplyFontComplex" "3" "<html><head><style>/* Style Definitions */span.PersonalReplyStyle{mso-style-name:\"Personal Reply Style\";mso-style-type:personal-reply;mso-style-noshow:yes;mso-style-unhide:no;mso-ansi-font-size:$FONTSIZE;mso-bidi-font-size:11.0pt;font-family:\"$FONTNAME\";mso-ascii-font-family:\"$FONTNAME\";mso-hansi-font-family:\"$FONTNAME\";mso-bidi-font-family:\"New Century Schoolbook LT\";mso-bidi-theme-font:minor-bidi;color:$FONTCOLOR;font-weight:normal;font-style:normal;text-decoration:none;text-underline:none;}--></style></head></html>"
 
 echo "Default Outlook font set successfully."
 
