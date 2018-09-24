@@ -3,5 +3,4 @@ osascript -e 'quit app "Slack"'
 rm -r /Applications/Slack.app
 wait 5
 jamf recon
-
 exit 0
